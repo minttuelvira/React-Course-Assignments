@@ -7,4 +7,26 @@ const products = [
   ];
 
 
-  
+  const ProductSelector = ({ selectedProduct, quantity, onProductChange, onQuantityChange }) => {
+
+    return (
+        <div className="product-selector">
+          <h2>Select product</h2>
+          <div className="form-group">
+            <label>Product: </label>
+            <select
+              value={selectedProduct.name}
+              onChange={(e) =>
+                onProductChange(products.find((p) => p.name === e.target.value))
+              }
+            >
+              {products.map((product) => (
+                <option key={product.name} value={product.name}>
+                  {product.name} ({product.price}€)
+                </option>
+              ))}
+            </select>
+          </div>
+        </div>
+      );
+    }     
