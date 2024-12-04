@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ProductSelector from './ProductSelector';
 import OrderInfo from './OrderInfo';
 import './ComponentUI.css';
-import logo from './pc-photo.png';
+import logo from './LOGO.png';
 
 const App = () => {
 
@@ -20,7 +20,7 @@ const App = () => {
       };
 
       return (
-        
+
         <div className="app-container">
 
           <header>
