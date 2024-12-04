@@ -1,0 +1,72 @@
+body {
+    background-color: rgb(248, 229, 248);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+.app-container {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    color: rgb(119, 47, 77);
+    border: 1px solid rgb(119, 47, 77);
+    background-color: rgb(204, 232, 213);
+    padding: 50px;
+    border-radius: 8px;
+    
+}
+
+.logo {
+    width: 200px;
+}
+
+.product-selector, .order-info {
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid rgb(211, 167, 211);
+    border-radius: 8px;
+    max-width: 400px;
+    background-color: rgb(238, 209, 238);
+  }
+
+  .form-group {
+    margin: 10px 0;
+  }
+
+  button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+  }
+
+  button:hover {
+    background-color: rgb(184, 147, 184);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+
+  th, td {
+    border: 1px solid rgb(211, 167, 211);
+    padding: 8px;
+    text-align: center;
+  }
+
+  h1 {
+    margin-bottom: 50px;
+  }
+
+  select {
+    border-radius: 3px;
+    padding: 5px;
+    border-style: none;
+  }
