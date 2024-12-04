@@ -27,6 +27,16 @@ const products = [
               ))}
             </select>
           </div>
+
+          <div className="form-group">
+            <label>Quantity: </label>
+            <button onClick={() => onQuantityChange(quantity - 1)}>-</button>
+            <span>{quantity}</span>
+            <button onClick={() => onQuantityChange(quantity + 1)}>+</button>
+          </div>
+
         </div>
       );
-    }     
+    }    
+    
+export default ProductSelector;
