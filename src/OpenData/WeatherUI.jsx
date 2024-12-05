@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Weather.css';
+import weatherlogo from './Weather-Logo.png';
 
 const WeatherApp = () => {
   const [weather, setWeather] = useState(null);
@@ -17,6 +18,7 @@ const WeatherApp = () => {
   return (
     <div class="weather-container">
       <h1>Weather App</h1>
+      <img src={weatherlogo} alt="WeatherLogo" className="weatherlogo" />
       <input type="text" value={city} onChange={(e) => setCity(e.target.value)} placeholder="Enter city"/>
       {weather && weather.main && (
         <div class="weather-info">
